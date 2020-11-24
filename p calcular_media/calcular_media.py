@@ -13,7 +13,7 @@ while True:
     n3 = float(input("Digite a tua 3ª nota: "))
     print("------------------------------------")
 
-    resultado = n1 + n2 + n3 / 3
+    resultado = (n1 + n2 + n3) / 3
     resp = ""
 
     if resultado >= 7:
