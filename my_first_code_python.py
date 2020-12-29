@@ -7,29 +7,44 @@ Author: Vinicius Santana
 if,else and elif extrutures
 """
 
-print('\nBot: Hello, What is your name? ')
-name = (str(input('\nYou: ')))
+My first code in Python v1.0
+11/19/2020
 
-print(f'\nBot: Hello {name.title()}, How old are you? ')
-age = (int(input('\nYou: ')))
+Author: Vinicius Santana
 
-if age <= 17:
-    print(f'\nBot: Cool {name.title()}, you are {age} years old and you are still a minor!')
-    print(f'\nBot: {name.title()}, Which state do you live in? ')
-    state = str(input('\nYou: '))
-if age >= 18:
-    print(f'\nBot: Cool {name.title()}, you are {age} and you are of age!')
-    print(f'\nBot: {name.title()}, Which state do you live in? ')
-    state = str(input('\nYou: '))
+if,else and elif extrutures
+"""
 
-else:
-    print(f'\nBot: It should be very good to live in {state.title()}')
-    print(f'\nBot: {name.title()}, do you like to study python? [Y/N]')
-    answer = str(input('\nYou: '))
+print('\nBot: Olá, Qual é o seu nome? ')
+name = (str(input('\nVocê: ')))
 
-if answer != 'Y' and answer != 'N':
-    print('\nBot: error, enter a valid command [Y / N]')
-elif answer == 'Y':
-    print(f'\nBot: Good {name.title()}! I hope you keep studying and improving more and more')
-else:
-    print(f'\nBot: Ok {name.title()}im sure you will find something else that you like. See you later')
+print(f'\nBot: Olá {name.title()}, quantos anos tem? ')
+idade = (int(input('\nVocê: ')))
+
+if idade <= 17:
+    print(f'\nBot: Legal {name.title()}, você tem {idade} anos e ainda é menor de idade!')
+    
+if idade >= 18:
+    print(f'\nBot: Legal {name.title()}, você tem {idade} anos e já é maior de idade!')
+    
+if idade <= 17 or idade >= 18:
+    print(f'\nBot: {name.title()}, Qual estado você mora? ')
+    estado = (input('\nVocê: '))
+    print(f'\nBot: Deve ser muito bom morar em {estado.title()}')
+    
+    while True:
+        print(f'\nBot: {name.title()}, você gosta de estudar python? [Y/N]')
+        resp = str(input('\nVocê: '))
+        
+        if resp == 'Y':
+            print(f'\nBot: Boa {name}, continue estudando e melhorando cada vez mais ')
+            break
+            
+        elif resp == "N":
+            print(f'\nBot: É uma pena {name}, mas tenho certeza que irá se encontrar em alguma outra linguagem.')
+            print('\nBot: Até logo.')
+            break
+            
+        else:
+            if resp != 'Y' and resp != 'N':
+                print('\nBot: Erro! comando inválido, digite novamente')
