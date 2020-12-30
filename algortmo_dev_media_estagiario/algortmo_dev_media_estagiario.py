@@ -21,6 +21,7 @@ opções:
 
 # Code:
 """
+
 while True:
     usuario = 1234
     senha = 9999
